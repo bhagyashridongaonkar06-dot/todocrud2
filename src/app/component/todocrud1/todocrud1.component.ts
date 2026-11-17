@@ -87,6 +87,8 @@ export class Todocrud1Component implements OnInit {
 
     let getIdx = this.todosArr.findIndex(e => e.todoId === todo.todoId)
     this.todosArr[getIdx] = todo
+      this._snackbar.snackbar(`Todo status with name ${todo.todoName} updated successfully`)
+
   }
 
 }
